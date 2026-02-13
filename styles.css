@@ -174,3 +174,16 @@ button:hover {
 .point {
   cursor: pointer; /* Changes to hand icon */
 }
+
+
+
+@media (max-width: 480px) {
+  .intro-content {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .intro-content h2 {
+    font-size: 20px;
+  }
+}
