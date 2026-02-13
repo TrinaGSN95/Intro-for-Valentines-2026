@@ -71,7 +71,15 @@ button:hover {
   font-size: 22px;
   animation: floatUp 4s linear forwards;
 }
-
+.hearts-bg{
+position: fixed;       /* stick to screen */
+  inset: 0;              /* top:0 left:0 right:0 bottom:0 */
+  width: 100%;
+  height: 100dvh;        /* mobile safe height */
+  overflow: hidden;      /* prevent scroll */
+  z-index: -1;           /* behind everything */
+  pointer-events: none; 
+}
 @keyframes floatUp {
   from { transform: translateY(0); opacity: 1; }
   to { transform: translateY(-800px); opacity: 0; }
