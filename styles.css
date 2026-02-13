@@ -1,11 +1,16 @@
 body {
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;   /* only block horizontal */
+  overflow-y: hidden;   /* keep vertical locked */
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #631562, #8a0013);
-  
 }
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+}
 
 /* Center card */
 .container {
